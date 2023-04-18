@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylessheet" href="./styles.css"
+    <title>Documentação Java</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header> Documentação Java</header>
+        <ul>
+        <li>
+            <a class="nav-link" href="#Iniciando_em_Java">Iniciando em Java</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Por_onde_começar">Por onde começar</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Imprimindo_no_console">Imprimindo no console</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Declarando_Funções">Declarando Funções</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Programação_orientada_a_objetos">Programação orientada a objetos</a>
+        </li>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Iniciando_em_Java">
+            <header>Iniciando em Java</header>
+            <p>Primeiros passos</p>
+            <ol>
+                <li>Baixar o Java</li>
+                <li>Baixar o Java SDK</li>
+                <li>Escolha uma IDE</li>
+                <li>Começando um projeto com a IDE</li>
+                <li>Seu primeiro "Hello World"</li>
+            </ol>
+        </section class="main-section" id ="Por_onde_começar">
+        <section>
+            <header>Por onde começar</header>
+            <p>O inicio de toda a aplicação Java é a função main.</p>
+            <p>
+                É definidar por (String[] arg) como o parametro da função.
+            </p>
+            <pre>
+                <code>
+                    public class MyMainFunction {
+                        //Exemplo de uma função main
+                        public static void main(String[] args){
+
+                        } 
+                    }
+                </code>
+            </pre>
+            <p>
+                Como pode ser visto a função main fica dentro da classe, e isso é uma parte fundamental da Programação orientada a objetos dos projetos em Java.
+            </p>
+            <p>ou seja o nome do projeto é "MyMainFunction"</p>
+        </section>
+            <section class="main-section" id ="Imprimindo_no_console">
+            <header>Imprimindo no console</header>
+            <p>Para imprimir no console, utilizamos system.out.println.</p>
+            <p>
+                Parece complicado mas é assim que se faz.
+            </p>
+            <pre>
+                <code>
+                    public class MyMainFunction{
+                        public static void main(String [] args){
+                            system.out.println("Hello World");
+                        }
+                    }
+                </code>
+            </pre>
+            <p>
+                Nesse exemplo estamos imprimindo "Hello World" no console quando rodamos o programa.
+            </p>
+        </section>
+        <section class="main-section" id ="Declarando_Funções">
+            <header>Declarando Funções</header>
+            <p>Funções são chamamadas de metodos em Java, aqui está um exemplo de como declarar um metodo.</p>
+            <img  src="https://media.geeksforgeeks.org/wp-content/uploads/methods-in-java.png" alt="java-method-img" class="image"/>
+            <p>Um exemplo pratico</p>
+            <pre>
+                <code>
+                    public static void myFunction(String,nome,int age){
+                        //codigo
+                    }
+                </code>
+            </pre>
+        </section>
+        <section class="main-section" id ="Programação_orientada_a_objetos">
+            <header>Programação orientada a objetos</header>
+            <p>Java é conhecida como uma linguagem orientada a objetos.</p>
+            <p>
+                Isto significa que é facil representar entidades como objetos usando classes e encapsulamento.
+            </p>
+            <p>
+                Um exemplo disso seria a classe estudande para representar um estudante 
+            </p>
+            <pre>
+                <code>
+                    public class Student{
+                        //propriedades da classe
+                        private String name;
+                        private int age;
+
+                        //construtor
+                        public Student(String name, int age){
+                            this.name = name;
+                            this.age = age;
+                        }
+                        //metodo getter
+                        public String getName(){
+                            return name;
+                        }
+                        //metodo setter
+                        public void setName(String name){
+                            this.name = name;
+                        }
+                    }
+                </code>
+            </pre>
+            <p>Usamos essa classe fazendo o seguite:</p>
+            <pre>
+                <code>
+                    Student student1 = new Student("joao",16);
+                    String joaoName = student1.getName();
+                    student1.setName("paulo");
+                    String pauloName = student1.getName();
+                </code>
+            </pre>
+        </section>
+    </main>
+</body>
+</html>
