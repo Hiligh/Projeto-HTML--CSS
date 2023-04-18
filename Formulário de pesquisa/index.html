@@ -1,0 +1,87 @@
+<DOCTYPE html>
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="styles.css">
+      <title>Formulário de pesquisa</title>
+    </head>
+    <body>
+      <main>
+        <header>
+          <h1 id="title">Formulário de pesquisa</h1>
+          <p id="description">Formulário de pesquisa sobre especificações de currículos!</p>
+          <hr>
+        </header>
+        <form id="survey-form">
+          <div class="divsDesign">
+            <label id="name-label">Nome:</label><br>
+            <input id="name" type="text" placeholder="digite seu nome" required>
+          </div>
+
+          <div class="divsDesign">
+            <label id="email-label">Email:</label><br>
+            <input id="email" type="email" placeholder="digite um email" required>
+          </div>
+
+          <div class="divsDesign">
+            <label id="number-label">Idade:</label><br>
+            <input id="number" type="number" placeholder="digite seu número" min="0" max="9">
+          </div>
+
+          <div id="escolhas1" class="escolhasSelect">
+            <label>Qual das opções abaixo descreve a sua função atual?</label><br>
+            <select id="dropdown" class="dropdown">
+              <option value="" selected  disabled>Selecione uma opção</option>
+              <option value="Estudante">Estudante</option>
+              <option value="Trabalho">Trabalho</option>
+              <option value="integral">Estudando em tempo integral</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </div>
+
+          <div id="caixasSelecao">
+            <label>Você recomendaria este formulário a outras pessoas?</label>
+            <div id="escolhas">
+              <input type="radio" name="botao" id="botoesRadio" value="sim">Sim
+              <input type="radio" name="botao" id="botoesRadio" value="nao">Não
+              <input type="radio" name="botao" id="botoesRadio" value="talvez">Talvez
+            </div>
+          </div>
+
+          <div id="escolhas2" class="escolhasSelect">
+            <label>Qual o seu recurso favorito do freeCodeCamp?</label>
+            <select id="dropdown" class="dropdown">
+              <option value="" selected disabled >Selecione uma opção</option>
+              <option value="desafios">Desafios</option>
+              <option value="projetos">Projetos</option>
+              <option value="comunidade">Comunidade</option>
+              <option value="Outro">Outros</option>
+            </select>
+          </div>
+          
+          <div id="melhorias">
+            <label>O que você gostaria de ver melhorado na plataforma?</label>
+            <hr>
+            <span>Projetos de Front-end</span>
+            <input type="checkbox" value="frond-end">
+            <span>Projetos de Back-end</span>
+            <input type="checkbox"value="back-end">
+            <span>Desafios</span>
+            <input type="checkbox" value="desafios">
+            <span>Videos</span>
+            <input type="checkbox" value="videos">
+            <span>Wiki</span>
+            <input type="checkbox" value="wiki">
+            <span>Fórum</span>
+            <input type="checkbox" value="forum">
+          </div>
+
+          <div id="comentarioFinal" class="escolhasSelect
+          ">
+            <label>Deseja adicionar algum comentário adicional ou sugestões?</label>
+            <textarea></textarea>
+            <button type="submit" value="submit" id="submit">Enviar</button>
+          </div>
+        </form>
+      </main>
+    </body>
+  </html>
